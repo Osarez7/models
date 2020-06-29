@@ -37,7 +37,7 @@ _DEFAULT_NUM_COORD_BOX = 4
 if tf_version.is_tf1():
   from tensorflow.tools.graph_transforms import TransformGraph  # pylint: disable=g-import-not-at-top
 
-tf.compat.v1.disable_eager_execution()
+tf.disable_eager_execution()
 
 def get_const_center_size_encoded_anchors(anchors):
   """Exports center-size encoded anchors as a constant tensor.
